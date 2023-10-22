@@ -1,0 +1,48 @@
+{
+    "name": "بوت استخراج جلسات",
+    "description": "بوت لاستخراج جلسة تليثون و بايروجورام",
+    "logo": "https://telegra.ph/file/9c98a3c6aa33c1fc90eb6.jpg",
+    "keywords": [
+        "python3",
+        "telegram",
+        "session",
+        "stringbot",
+        "telegram-bot",
+        "pyrogram",
+        "telethon"
+    ],
+    "repository": "https://github.com/mahmoud-gg/StringGenV2",
+    "env": {
+      "API_ID": {
+        "description": "Get this value from https://my.telegram.org",
+        "value": "",
+        "required": true
+      },
+      "API_HASH": {
+        "description": "Get this value from https://my.telegram.org",
+        "value": "",
+        "required": true
+      },
+      "BOT_TOKEN": {
+        "description": "A Bot's token from Botfather",
+        "value": "",
+        "required": true
+      },
+      "OWNER_ID": {
+        "description": "Fill your user id here. (Must be integer)",
+        "value": "",
+        "required": true
+      },
+      "MONGO_DB_URI": {
+        "description": "Get this value from cloud.mongodb.com",
+        "value": "",
+        "required": true
+      }
+    },
+    "buildpacks": [
+          {
+              "url": "heroku/python"
+          }
+      ],
+      "stack": "container"
+  }
